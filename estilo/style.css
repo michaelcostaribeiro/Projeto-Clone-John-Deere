@@ -76,6 +76,9 @@ html, body{
     flex-direction: column;
     width: 100%;
 }
+.container-image{
+    background-position: right bottom;
+}
 
 .container-text-content{
     margin: 10px auto;
