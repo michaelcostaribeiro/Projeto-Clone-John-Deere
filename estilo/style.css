@@ -79,7 +79,7 @@ html, body{
 
 .container-image{
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .container-text-content{
