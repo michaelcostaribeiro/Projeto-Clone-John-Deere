@@ -11,26 +11,21 @@
 :root{
     --font-color-1:#333333;
     --font-color-2:#333359;
-    --font-color-3:green;
+    --font-color-3:#367c2b;
     --font-color-4:#666666;
     --font-color-5:#e5e5e5;
+    --font-color-6:rgba(128, 128, 128, 0.384);
 }
 html, body{
     display: flex;
     flex-direction: column;
-    max-width: 100vw;
-    height: 100vh;
+    height: auto;
     overflow-x: hidden;
     box-sizing: border-box;
-
     font-size: 62.5%;
-
 }
 
 .main-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -61,6 +56,9 @@ html, body{
     color: grey;
 }
 
+.header-options, #signp, #findp{
+    display: none;
+}
 .search-container{
     display: flex;
     justify-content: center;
@@ -69,15 +67,31 @@ html, body{
     height: 50px;
     background-color: var(--font-color-5);
 }
-
-#isearch{
-    width: 92%;
+.search-container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
     height: 60%;
     border: 1px solid #000;
+    border-radius: 3px;
+
+}
+
+#isearch{
+    border: none;
+    width: 95%;
+    height: 100%;
     border-radius: 5px;
     padding-left: 20px;
     font-size: 1.5rem;
 }
+#isearch-submit{
+    height: 100%;
+    width: 5%;
+    border: none;
+}
+
 
 .container{
     display: flex;
@@ -100,6 +114,9 @@ html, body{
     align-items: center;
     flex: 1;
 }
+.container-text-content p{
+    padding: 0;
+}
 
 .container-text-content h1{
     line-height: 5rem;
@@ -111,13 +128,20 @@ html, body{
 }
 
 .container-text-content-cta{
+    margin: 30px 0 20px 0;
+}
+.green-buttom{
     border: 2px solid var(--font-color-3);
     font-weight: bold;
     color: var(--font-color-3);
     text-decoration: none;
     font-size: 0.9em;
-    margin: 30px 0 20px 0;
     padding: 15px;
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+.green-buttom:hover{
+    background-color: var(--font-color-3);
+    color: white;
 }
 
 .products{
@@ -188,7 +212,7 @@ html, body{
     text-decoration: none;
 }
 .recommended-products a img{
-    width: 70%;
+    width: 60%;
     margin: 10px;
     border-radius: 5px;
 }
@@ -198,10 +222,14 @@ html, body{
     font-size: 1.7rem;
 }
 
+.news-div{
+    width: 100%;
+    height: auto;
+}
+
 .news-container{
     position: relative;
     max-width: 90%;
-    height: 90%;
     margin: 2% 5%;
     background-color: #333333;
     font-size: 1.7rem;
@@ -222,7 +250,7 @@ html, body{
     z-index: 2;
 }
 .news-container-text h3, p{
-    padding:20px 0px 0px 20px;
+    padding:15px 0px 0px 15px;
 }
 .banner {
     text-align: center;
@@ -274,4 +302,56 @@ html, body{
 
 .text-above-footer{
     font-size: 1.2rem;
+}
+footer{
+    background-color: var(--font-color-5);
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+.utility-list{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--font-color-6);
+    font-weight: bold;
+}
+.utility-list h3{
+    padding: 15px;
+    border-bottom: 1px solid var(--font-color-6);
+}
+.utility-list h3 i{
+    color: var(--font-color-3);
+}
+.utility-list ul{
+    display: none;
+}
+
+.language-buttom{
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid var(--font-color-6);
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--font-color-1);
+}
+
+.disclaimer{
+    margin: auto;
+    width: fit-content;
+}
+
+
+.socials{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 40px auto;
+}
+.socials li a img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }

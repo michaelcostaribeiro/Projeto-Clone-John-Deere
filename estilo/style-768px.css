@@ -1,0 +1,104 @@
+.container{
+    position: relative;
+}
+
+.container-text-content{
+    position: absolute;
+    text-align: left;
+    align-items: flex-start;
+    width: fit-content;
+    z-index: 10;
+    margin: 30px 0 0 30px;
+}
+
+.container-text-content h1, .container-text-content p{
+    color: white;
+    text-shadow: 1px 1px 6px #000000ab;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.container-text-content p{
+    font-size: 2rem;
+}
+
+.green-buttom{
+    border: 2px solid white;
+    color: white;
+    text-shadow: 1px 1px 6px #000000ab;
+    transition: background-color 0.5s ease-in, color 0.5s ease-in, text-shadow 0.5s ease-in;
+}
+
+.green-buttom:hover{
+    background-color: white;
+    color: var(--font-color-3);
+    text-shadow: none;
+}
+
+.products{
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    margin: 0 0 10px 0;
+}
+.products a{
+    width: 46%;
+    border-right: 1px solid #3333331c;
+    margin: 0;
+}
+
+.quick-nav{
+    width: 95%;
+}
+.recommended-products__title{
+    margin: 10px 2.5%;
+}
+.recommended-products a img{
+    width: 40%;
+}
+
+.news-div{
+    display: flex;
+}
+.news-container{
+    margin: 0% 2%;
+}
+
+.news-container-text{
+    top: 0px;
+    background-color: transparent;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 4px #000, 0 0 15px #000;
+}
+
+#news-container-text__2{
+    top:70px;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner__title{
+    position: absolute;
+    top: 0;
+    right: 3%;
+    color: white;
+    font-size: 4rem;
+    text-shadow: 0px 0px 9px black;
+}
+.banner__cta{
+    position: absolute;
+    bottom: 50%;
+    right: 3%;
+}
+
+.bottom-search{
+    margin: 0px 2.5% 20px;
+}
+
+.news-container-text h3, p {
+    padding: 15px 0px 0px 15px;
+    margin: 10px auto;
+    width: 95%;
+}

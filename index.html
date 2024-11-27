@@ -3,140 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John-Deere-Clone_index</title>
+    <title>Adragro</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="/estilo/style-768px.css">
+    <link rel="stylesheet" media="(min-width:1002px)" href="estilo/style-1002px.css">
+    <link rel="stylesheet" media="(min-width:1133px)" href="estilo/style-1133px.css">
+    <link rel="shortcut icon" href="images/icons/e-mail-icon.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9f798642c9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="main-nav">
-            <nav class="main-nav-logo-container">
-                <a href="#"><img src="images/icons/adagro-logo.svg" alt="adagro logo"></a>
-            </nav>
-            <nav class="main-nav-navigation-container">
-                <ul class="main-nav-navigation-container-ul">
-                    <li><a href="#" ><i class="fa-solid fa-location-dot"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-        <nav class="search-container"><input type="text" name="search" id="isearch" placeholder="Search" ></nav>
-    </header>
-    <div class="container">
-        <picture class="container-image">
-            <source media="(min-width: 992px)" srcset="images/background-images/banner-1366x347.jpg">
-            <source media="(min-width: 768px)" srcset="images/background-images/banner-991x361.jpg">
-            <source media="(min-width: 320px)" srcset="images/background-images/banner-767x431.jpg">
-            <img src="images/background-images/banner-1366x347.jpg" alt="">
-        </picture>
-        <article class="container-text-content">
-            <h1 class="container-text-content-title">Enjoy Up to 7 Years Interest-Free</h1>
-            <p class="container-text-content-text">Conquer all your tasks with 0% APR for 60, 72, or 84 months on select Compact Utility Tractors</p>
-            <a href="#" class="container-text-content-cta"> Shop Compact Utility Tractors Now</a>
-        </article>
-    </div>
-
-    <div class="products">
-        <a href="#"><img src="images/background-images/Escavator.jpg" alt="Escavator" class="products__images"><p class="products__text">Escavator</p></a>
-        <a href="#"><img src="images/background-images/Compact-Construction-Equipment.jpg" alt="Compact Construction" class="products__images"><p class="products__text">Compact Construction Equipment</p></a>
-        <a href="#"><img src="images/background-images/Tractor.jpg" alt="Tractor" class="products__images"><p class="products__text">Tractors</p></a>
-        <a href="#"><img src="images/background-images/Compact-Construction-Equipment.jpg" alt="Compact Tractors" class="products__images"><p class="products__text">Compact Tractors</p></a>
-        <a href="#"><img src="images/background-images/Mowers.jpg" alt="Escavator" class="products__images"><p class="products__text">Mowers</p></a>
-        <a href="#"><img src="images/background-images/Gator-Utility-Vehicles.jpg" alt="Escavator" class="products__images"><p class="products__text">Gator Utility Vehicles</p></a>
-
-    </div>
-
-    <nav>
-        <div class="quick-nav"><a href="#">Product Selector</a></div>
-        <div class="quick-nav"><a href="#">Buy Parts</a></div>
-        <div class="quick-nav"><a href="#">Download Manuals</a></div>
-        <div class="quick-nav"><a href="#">Offers & Discounts</a></div>
-    </nav>
-
-    <div class="recommended-products" id="here">
-        <h2 class="recommended-products__title">Recommended Products</h2>
-        <p>Continue shopping</p>
-        <a href="#">
-            <img src="images/background-images/cab.jpg" alt="John Deere Model B Tractor">
-            <p>John Deere Model B Tractor ></p>
-        </a>
-    </div>
-
-    <article class="news-container">
-        <a href="" class="news-container-panel">
-            <img src="images/news-images/news-1.jpg" alt="news1">
-            <div class="news-container-text">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="main">
+        <header class="main-header">
+            <div class="main-nav">
+                <nav class="main-nav-logo-container">
+                    <a href="#"><img src="images/icons/adagro-logo.svg" alt="adagro logo"></a>
+                </nav>
+                <nav class="main-nav-navigation-container">
+                    <ul class="main-nav-navigation-container-ul">
+                        <li id="ifind"><a href="#" ><i class="fa-solid fa-location-dot"></i><p id="findp">&nbsp;Find a Dealer</p></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i><p id="signp">&nbsp;&nbsp;Sign In</p></a></li>
+                        <li id="ibars"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </nav>
             </div>
-        </a>
-    </article>
-
-
-    <article class="news-container">
-        <a href="" class="news-container-panel">
-            <img src="images/news-images/news-2.jpg" alt="news1">
-            <div class="news-container-text">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="search-container">
+                <nav class="search-container-box"><input type="submit" id="isearch-submit" value="🔍"><input type="text" name="search" id="isearch" placeholder="Search" ></nav>
             </div>
-        </a>
-    </article>
-    
-    
-    <article class="news-container">
-        <a href="" class="news-container-panel">
-            <img src="images/news-images/news-3.jpg" alt="news1">
-            <div class="news-container-text">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ul class="header-options">
+                <li><a href="#" id="active-page">Home</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">dolor</a></li>
+                <li><a href="#">sit</a></li>
+                <li><a href="#">Digital</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <picture class="container-image">
+                <source media="(min-width: 992px)" srcset="images/background-images/banner-1366x347.jpg">
+                <source media="(min-width: 768px)" srcset="images/background-images/banner-991x361.jpg">
+                <source media="(min-width: 320px)" srcset="images/background-images/banner-767x431.jpg">
+                <img src="images/background-images/banner-1366x347.jpg" alt="">
+            </picture>
+            <article class="container-text-content">
+                <h1 class="container-text-content-title">Lorem ipsum dolor sit amet consectetur.</h1>
+                <p class="container-text-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, id esse? Officia?</p>
+                <a href="#" class="container-text-content-cta green-buttom"> Shop Compact Utility Tractors Now</a>
+            </article>
+        </div>
+        <div class="products">
+            <a href="#"><img src="images/background-images/Escavator.jpg" alt="Escavator" class="products__images"><p class="products__text">Escavator</p></a>
+            <a href="#"><img src="images/background-images/Compact-Construction-Equipment.jpg" alt="Compact Construction" class="products__images"><p class="products__text">Compact Construction Equipment</p></a>
+            <a href="#"><img src="images/background-images/Tractor.jpg" alt="Tractor" class="products__images"><p class="products__text">Tractors</p></a>
+            <a href="#"><img src="images/background-images/Compact-Tractors.jpg" alt="Compact Tractors" class="products__images"><p class="products__text">Compact Tractors</p></a>
+            <a href="#"><img src="images/background-images/Mowers.jpg" alt="Escavator" class="products__images"><p class="products__text">Mowers</p></a>
+            <a href="#"><img src="images/background-images/Gator-Utility-Vehicles.jpg" alt="Escavator" class="products__images"><p class="products__text">Gator Utility Vehicles</p></a>
+        </div>
+        <nav class="mid-screen-nav">
+            <div class="quick-nav"><a href="#">&nbsp;<i class="fa-solid fa-arrow-pointer"></i>&nbsp;Product Selector</a></div>
+            <div class="quick-nav"><a href="#">  <i class="fa-solid fa-cart-shopping"></i>&nbsp;Buy Parts</a></div>
+            <div class="quick-nav"><a href="#"><i class="fa-solid fa-download"></i>  Download Manuals</a></div>
+            <div class="quick-nav"><a href="#">  <i class="fa-solid fa-tag"></i>  Offers & Discounts</a></div>
+        </nav>
+        <div class="recommended-products">
+            <h2 class="recommended-products__title">Recommended Products</h2>
+            <p>Continue shopping</p>
+            <a href="#">
+                <img src="images/background-images/cab.jpg" alt="John Deere Model B Tractor">
+                <p>John Deere Model B Tractor ></p>
+            </a>
+        </div>
+        <div class="news-div">
+            <article class="news-container">
+                <a href="" class="news-container-panel">
+                    <img src="images/news-images/news-1.jpg" alt="news1">
+                    <div class="news-container-text">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </a>
+            </article>
+            <article class="news-container">
+                <a href="" class="news-container-panel">
+                    <img src="images/news-images/news-2.jpg" alt="news1">
+                    <div class="news-container-text" id="news-container-text__2">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </a>
+            </article>
+        
+        
+            <article class="news-container">
+                <a href="" class="news-container-panel">
+                    <img src="images/news-images/news-3.jpg" alt="news1">
+                    <div class="news-container-text">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+        <div class="banner">
+            <picture class="banner__image">
+                <source media="(min-width: 992px)" srcset="images/background-images/hero-banner-1366x374.jpg">
+                <source media="(min-width: 768px)" srcset="images/background-images/hero-banner-991x361.jpg">
+                <source media="(min-width: 320px)" srcset="images/background-images/hero-banner-767x431.jpg">
+                <img src="images/background-images/hero-banner-1366x374.jpg" alt="">
+            </picture>
+            <h1 class="banner__title">Adagro's Manufacturing</h1>
+            <a href="#" class="banner__cta green-buttom">Read More</a>
+        </div>
+        <div class="bottom-search">
+            <h1>Search Parts by</h1>
+            <div class="search-box">
+                <input type="submit" value="Search" name="bottom-submit" id="ibottom-submit">
+                <input type="text" name="bottom-search" id="ibottom-search" placeholder="Seach by PIN, Model or Equipment">
             </div>
-        </a>
-    </article>
-
-    <div class="banner">
-        <picture class="banner__image">
-            <source media="(min-width: 992px)" srcset="images/background-images/hero-banner-1366x374.jpg">
-            <source media="(min-width: 768px)" srcset="images/background-images/hero-banner-991x361.jpg">
-            <source media="(min-width: 320px)" srcset="images/background-images/hero-banner-767x431.jpg">
-            <img src="images/background-images/hero-banner-1366x374.jpg" alt="">
-        </picture>
-        <h1 class="banner__title">Adagro's Manufacturing</h1>
-        <a href="#" class="banner__cta">Read More</a>
-    </div>
-
-    <div class="bottom-search">
-        <h1>Search Parts by</h1>
-        <div class="search-box">
-            <input type="submit" value="Search" name="bottom-submit" id="ibottom-submit">
-            <input type="text" name="bottom-search" id="ibottom-search" placeholder="Seach by PIN, Model or Equipment">
         </div>
+        <p class="text-above-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est reprehenderit ullam delectus consequuntur perspiciatis rerum numquam unde dicta dolorum suscipit, quia iure nulla natus praesentium a dolor qui optio sed. Nostrum autem, repellat totam explicabo tempore reiciendis! Neque, consectetur unde maiores quidem atque magnam ea nostrum asperiores corporis eius laboriosam eligendi hic? Voluptate, officia corporis ipsum voluptates voluptatibus obcaecati vero libero adipisci repellat assumenda excepturi facilis, corrupti rerum repellendus quasi. Asperiores minus quo molestias esse? Voluptatem, quidem molestiae? Doloremque eum temporibus, molestiae reprehenderit aliquam sunt perspiciatis consequuntur quod harum at sapiente minima tempora. Ipsam velit cupiditate dicta, doloribus blanditiis dolor amet sed sunt reprehenderit, dolores tenetur maxime, dolore ad asperiores aliquam! Mollitia, incidunt ducimus! Libero, voluptatum. Saepe facilis itaque ullam sunt rem! Provident, atque sunt aperiam voluptatum fugit amet, numquam dolorum facilis similique, dolorem at. Sit beatae est suscipit, non, laborum itaque, dignissimos assumenda modi ducimus nisi distinctio perspiciatis aperiam.</p>
+        <footer>
+            <div class="utility-list">
+                <div class="utility-list-item">
+                    <h3><i class="fa-solid fa-plus"></i>     Products & Support</h3>
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">ipsum</a></li>
+                        <li><a href="#">dolor</a></li>
+                        <li><a href="#">sit</a></li>
+                        <li><a href="#">amet</a></li>
+                    </ul>
+                </div>
+                <div class="utility-list-item">
+                    <h3><i class="fa-solid fa-plus"></i>     Company Information</h3>
+                    <ul>
+                        <li><a href="#">consectetur</a></li>
+                        <li><a href="#">adipisicing</a></li>
+                        <li><a href="#">elit</a></li>
+                    </ul>
+                </div>
+                <div class="utility-list-item">
+                    <h3><i class="fa-solid fa-plus"></i>     News & Publications</h3>
+                    <ul>
+                        <li><a href="#">Sunt</a></li>
+                        <li><a href="#">dolores</a></li>
+                        <li><a href="#">voluptate</a></li>
+                        <li><a href="#">voluptatem</a></li>
+                        <li><a href="#">ab</a></li>
+                    </ul>
+                </div>
+                <div class="utility-list-item">
+                    <h3><i class="fa-solid fa-plus"></i>     Connect with John Deere</h3>
+                    <ul>
+                        <li><a href="#">consectetur</a></li>
+                        <li><a href="#">adipisicing</a></li>
+                        <li><a href="#">elit</a></li>
+                        <li><a href="#">Sunt</a></li>
+                        <li><a href="#">dolores</a></li>
+                        <li><a href="#">voluptate</a></li>
+                        <li><a href="#">voluptatem</a></li>
+                        <li><a href="#">ab</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="language-buttom"><i class="fa-solid fa-flag-usa"></i>  United States</a>
+            <p class="disclaimer">This website is merely inspired by John Deere's website and doesn't want to sell you anything.</p>
+            <ul class="socials">
+                <li class="facebook"><a href="#"><img src="images/icons/facebook-icon.png" alt="facebook icon"></a></li>
+                <li class="twitter"><a href="#"><img src="images/icons/twitter-icon.png" alt="twitter icon"></a></li>
+                <li class="youtube"><a href="#"><img src="images/icons/youtube-icon.png" alt="youtube icon"></a></li>
+                <li class="linkedin"><a href="#"><img src="images/icons/linkedin-icon.png" alt="linkedin icon"></a></li>
+                <li class="instagram"><a href="#"><img src="images/icons/instagram-icon.png" alt="instagram icon"></a></li>
+                <li class="mail"><a href="#"><img src="images/icons/e-mail-icon.svg" alt="mail icon"></a></li>
+                <li class="tiktok"><a href="#"><img src="images/icons/tiktok-icon.svg" alt="tiktok icon"></a></li>
+            </ul>
+        </footer>
     </div>
-
-    <p class="text-above-footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est reprehenderit ullam delectus consequuntur perspiciatis rerum numquam unde dicta dolorum suscipit, quia iure nulla natus praesentium a dolor qui optio sed. Nostrum autem, repellat totam explicabo tempore reiciendis! Neque, consectetur unde maiores quidem atque magnam ea nostrum asperiores corporis eius laboriosam eligendi hic? Voluptate, officia corporis ipsum voluptates voluptatibus obcaecati vero libero adipisci repellat assumenda excepturi facilis, corrupti rerum repellendus quasi. Asperiores minus quo molestias esse? Voluptatem, quidem molestiae? Doloremque eum temporibus, molestiae reprehenderit aliquam sunt perspiciatis consequuntur quod harum at sapiente minima tempora. Ipsam velit cupiditate dicta, doloribus blanditiis dolor amet sed sunt reprehenderit, dolores tenetur maxime, dolore ad asperiores aliquam! Mollitia, incidunt ducimus! Libero, voluptatum. Saepe facilis itaque ullam sunt rem! Provident, atque sunt aperiam voluptatum fugit amet, numquam dolorum facilis similique, dolorem at. Sit beatae est suscipit, non, laborum itaque, dignissimos assumenda modi ducimus nisi distinctio perspiciatis aperiam.</p>
-
-    <footer>
-        <div class="utility-list">
-            <h3>Products & Support</h3>
-            <h3>Company Information</h3>
-            <h3>News & Publications</h3>
-            <h3>Connect with John Deere</h3>
-        </div>
-
-        <a href="">United States</a>
-        <p>This website is merely inspired by John Deere's website and doesn't want to sell you anything.</p>
-
-        <ul class="socials">
-            <li class="facebook"></li>
-            <li class="twitter"></li>
-            <li class="youtube"></li>
-            <li class="linkedin"></li>
-            <li class="instagram"></li>
-            <li class="mail"></li>
-            <li class="tiktok"></li>
-        </ul>
-    </footer>
-
 </body>
 </html>

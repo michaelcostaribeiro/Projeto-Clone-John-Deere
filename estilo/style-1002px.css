@@ -1,0 +1,85 @@
+
+.container-image{
+    height: 270px;
+    width: 100%;
+}
+
+.container-text-content{
+    font-size: 5rem;
+    height: 90%;
+}
+
+.container-text-content p{
+    position: absolute;
+    top: 40%;
+}
+
+
+.container-text-content-cta{
+    display: none;
+}
+
+.products a {
+    width: 30%;
+    font-size: 1.7rem;
+}
+
+.quick-nav{
+    width: 90%;
+}
+.recommended-products__title {
+    margin: 10px 5%;
+}
+.recommended-products a img{
+    width: 40%;
+}
+
+.news-div{
+    width: 90%;
+    margin: auto;
+}
+
+.bottom-search{
+    margin: 0px 5% 20px;
+}
+
+.text-above-footer{
+    width: 90%;
+}
+
+.utility-list{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+    justify-content: space-around;
+    height: 300px;
+    border-bottom: 1px solid var(--font-color-6);
+}
+
+.utility-list-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.utility-list h3 {
+    padding: 15px;
+    border-bottom:none;
+}
+.utility-list h3 i{
+    display: none;
+}
+.utility-list ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.utility-list ul li{
+    margin-top: 5px;
+}
+
+.utility-list ul li a{
+    text-decoration: none;
+    color: var(--font-color-4);
+    padding: 15px;
+}
